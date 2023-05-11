@@ -1,0 +1,459 @@
+:root {
+  --primary-text-color: #757575;
+  --secondary-text-color: #212121;
+  --accent-color: #2196f3;
+  --main-heading-color: #ffffff;
+  --contact-info-color: rgba(255, 255, 255, 0.6);
+  --hero-footer-bcgcolor: #2f303a;
+  --team-bcgcolor: #f5f4fa;
+  --logo-color: #000000;
+  --button-bcgcolor: #188ce8;
+  --outline-color: #eeeeee;
+}
+
+/* ------------------- MAIN PAGE -------------------  */
+
+/* ------------------- Body -------------------  */
+
+/* * {
+  outline: 1px solid blueviolet;
+} */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin: 0;
+}
+
+ul {
+  padding-left: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.header-section {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.sub-heading {
+  color: var(--secondary-text-color);
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+/* ------------------- Header Section ------------------- */
+
+.header-section {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  margin-left: 14px;
+  margin-right: 93px;
+
+  color: var(--logo-color);
+}
+.logo-name {
+  color: var(--accent-color);
+}
+
+.nav-list {
+  color: var(--secondary-text-color);
+  display: flex;
+}
+
+.nav-list .site-link {
+  color: var(--secondary-text-color);
+  display: block;
+  padding: 10px;
+}
+
+.nav-list .site-link:hover,
+.nav-list .site-link:focus {
+  color: var(--accent-color);
+}
+
+.nav-list .link.current {
+  color: var(--accent-color);
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.contacts {
+  margin-left: auto;
+}
+
+.contacts-list {
+  display: flex;
+}
+
+.contacts-list .contacts-link {
+  font-style: normal;
+  display: block;
+  padding: 10px;
+
+  color: var(--primary-text-color);
+}
+
+.contacts-list .contacts-link:hover,
+.contacts-list .contacts-link:focus {
+  color: var(--accent-color);
+}
+
+.contacts-list .contact-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+/* -------------------  Hero section -------------------  */
+
+.hero-section {
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.title {
+  max-width: 696px;
+  margin: 0 auto 30px auto;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--main-heading-color);
+}
+.hero-button {
+  min-width: 216px;
+  padding: 10px 32px;
+  border-radius: 4px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  color: var(--main-heading-color);
+  background-color: var(--accent-color);
+}
+
+.hero-button:hover,
+.hero-button:focus,
+.hero-button:active {
+  background-color: var(--button-bcgcolor);
+}
+.hero-section {
+  background-color: var(--hero-footer-bcgcolor);
+}
+
+/* -------------------  Features-section -------------------  */
+
+.features-section {
+  padding-top: 94px;
+  padding-bottom: 47px;
+}
+
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.features-list .sub-heading {
+  font-size: 18px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.features-list .feature-item {
+  width: calc((100% - 90px) / 4);
+  margin-right: 30px;
+}
+
+.features-list .feature-item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.features-list .sub-heading {
+  margin-bottom: 10px;
+}
+
+/* ------------------- About Section -------------------  */
+
+.about-section {
+  padding-top: 47px;
+  padding-bottom: 94px;
+}
+
+.about-section-heading {
+  margin-bottom: 50px;
+
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+
+  color: var(--secondary-text-color);
+}
+
+.about-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-item {
+  margin-right: 30px;
+}
+
+.about-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+/* -------------------  Team section -------------------  */
+
+.team-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  background-color: var(--team-bcgcolor);
+}
+
+.team-section-heading {
+  margin-bottom: 50px;
+
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+
+  color: var(--secondary-text-color);
+}
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.team-list-item {
+  margin-right: 30px;
+}
+
+.team-list-item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.team-list .team-list-item {
+  max-width: 270px;
+
+  background-color: var(--main-heading-color);
+}
+
+.team-list .team-description,
+.team-list .sub-heading {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.team-list .sub-heading {
+  font-weight: 500;
+}
+
+.team-info {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.team-info .sub-heading {
+  margin-bottom: 10px;
+}
+
+/* -------------------  Footer Section ------------------- */
+
+.footer-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: var(--hero-footer-bcgcolor);
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 20px;
+
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  color: var(--main-heading-color);
+}
+
+.contact-address {
+  margin-bottom: 9px;
+
+  color: var(--main-heading-color);
+}
+
+.contact-email,
+.contact-phone {
+  margin-bottom: 9px;
+
+  color: var(--contact-info-color);
+}
+
+.address {
+  display: flex;
+  font-style: normal;
+}
+
+.contact-list-item .link:hover,
+.contact-list-item .link:focus {
+  color: var(--accent-color);
+}
+
+/* -------------------  PORTFOLIO PAGE -------------------  */
+
+.portfolio-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* ------------------- Button list -------------------  */
+
+.filter {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.filter-button {
+  padding: 6px 22px;
+  border-radius: 4px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+
+  background-color: var(--team-bcgcolor);
+  color: var(--secondary-text-color);
+}
+
+.filter-button:hover,
+.filter-button:focus,
+.filter-button:active {
+  background-color: var(--accent-color);
+  color: var(--main-heading-color);
+}
+
+/* -------------------  Portfolio list -------------------  */
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 30px; */
+  margin: -15px;
+}
+
+.portfolio-item {
+  max-width: 370px;
+  margin: 15px;
+  /* margin-right: 30px;
+  margin-bottom: 30px; */
+}
+
+/* .portfolio-item:nth-child(3n) {
+  margin-right: 0;
+}
+.portfolio-item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+} */
+
+.portfolio-img {
+  display: block;
+}
+
+.portfolio-info {
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--outline-color);
+  border-left: 1px solid var(--outline-color);
+  border-right: 1px solid var(--outline-color);
+}
+
+.portfolio-link .portfolio-heading {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+
+  color: var(--secondary-text-color);
+}
+
+.portfolio-heading {
+  margin-bottom: 4px;
+}
+
+.portfolio-link .portfolio-description {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+}
